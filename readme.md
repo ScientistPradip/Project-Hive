@@ -29,3 +29,22 @@ In case you have already existed hive console then just use hive command instead
  ![Step_1](Screenshots/Step1_starting_hive_in_docker.png)
 
  ### Step 2: Check data in HDFS
+ After this open external terminal. Now, we'll be using Hadoop where we'll be creating one empty file.
+ We're going to create 'customer.txt and we'll paste 4 lines of already created/ready data in that
+ ![Step_2](Screenshots/Step2.png)
+
+### Step 3: Creating Database in Hive Console
+Creating database named xyz. Here instead of default data base storage now we'll be using that xyz database to store our data. 
+And viewing the data we stored in that database
+![Step_3](Screenshots/Step3.png)
+
+### Step 4: Creating external table in hive console and checking if we drop that external table metadata along with data will drop or not
+External table created with column name and datatype 
+
+![Step_4](Screenshots/Step4.png)
+
+Now Checking it in default HDFS Storage where the data we created stores in default storage location ie /data/hive/warehouse/xyz.db
+that is the db we created its empty.
+It means that if we drop external table even metadata is dropped data is still there as HDFS is the original owner of data. 
+
+![Step_4](Screenshots/Step4_partII_dataisStillThereInHDFSWeJustDeletedInHIVE.png)
