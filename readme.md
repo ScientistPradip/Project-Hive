@@ -43,8 +43,27 @@ External table created with column name and datatype
 
 ![Step_4](Screenshots/Step4.png)
 
-Now Checking it in default HDFS Storage where the data we created stores in default storage location ie /data/hive/warehouse/xyz.db
+Now checking it in default HDFS Storage where the data we created stores in default storage location ie /data/hive/warehouse/xyz.db
 that is the db we created its empty.
 It means that if we drop external table even metadata is dropped data is still there as HDFS is the original owner of data. 
 
 ![Step_4](Screenshots/Step4_partII_dataisStillThereInHDFSWeJustDeletedInHIVE.png)
+
+
+### Step 5: Creating Manage table in HDFS
+The below command wil show hive directory or warehouse (hadoop fs -ls/data/hive/warehouse).
+Everytime when we create a database or a table that will create a folder here (hadoop fs -ls/data/hive/warehouse/xyz.db)
+
+Right now its empty becauze we have external table not the manage table (external table points to somewhere else in hive not in HDFS)
+
+![Step_5_partI](Screenshots/Step5_partI.png)
+
+Creating emp table
+
+![Step_5_partII](Screenshots/Step5partII_CreatingNewTableEMP.png)
+
+Right now if we run ls command and check in that hadoop location(hadoop fs -ls/data/hive/warehouse/xyz.db) then still the folder is empty just created file name EMP (To view it we have to insert the records/ data with datatypes). Going to hive and insert into command "insert into imp values(1, 'vishal', '2000-01-01;)"
+(I am the owner of this data because I created it through Hive)
+Now Lets Verify the data in HDFS to view the data we inserted 
+
+![Step_5_partIII](Screenshots/Step5partII_CreatingNewTableEMP.png)
