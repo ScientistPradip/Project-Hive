@@ -67,3 +67,21 @@ Right now if we run ls command and check in that hadoop location(hadoop fs -ls/d
 Now Lets Verify the data in HDFS to view the data we inserted 
 
 ![Step_5_partIII](Screenshots/Step5partII_CreatingNewTableEMP.png)
+
+### Step 6: Loading data from one table to another
+(create table emp1(empId int, empName String, doj date);) <---- Creating metadata first
+
+Let's load data from emp table to emp1 table using command: INSERT INTO TABLE emp1 select * from emp;
+if we again use this command I mean total 2 times this happens we started with empty file emp1 
+![Step_6_partI](Screenshots/Step6_partI.png)
+
+Now lets load again using another way:
+INSERT OVERWRITE TABLE emp1 select * from emp;
+It copies the data from emp and paste to emp1 but the old data of emp1 is totally replaced by emp(old data of emp1 is deleted)
+
+![Step_6_partII](Screenshots/Step6_partII.png)
+
+Summary:
+Override ---> removes old data and put the new one 
+Onto     ---> keeps the old data and adds the new one 
+
