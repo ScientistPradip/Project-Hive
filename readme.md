@@ -83,5 +83,5 @@ It copies the data from emp and paste to emp1 but the old data of emp1 is totall
 
 Summary:
 Override ---> removes old data and put the new one 
-Onto     ---> keeps the old data and adds the new one 
+Into     ---> keeps the old data and adds the new one 
 
