@@ -103,22 +103,23 @@ At first attempt of overwriting values from non partitioned table to partitioned
 
 Important thing in this image is after column1 the day and event both day and event should be in order else day value will go in event and event value will be stored in day that is incorrect.
 
-![Step_7_partIII](Screenshots\Step7_partIII.png)
+![Step_7_partIII](Screenshots/Step7_partIII.png)
 
 Viewing value its same as non-partitioned table because we overwrite it to partitioned table.
 
-![Step_7_partIV](Screenshots\Step7_partIV.png)
+![Step_7_partIV](Screenshots/Step7_partIV.png)
 
 Now Lets see the difference between these two(non-partitioned and partitioned) in HDFS how both type of data is stored 
 
-![Step_7_FinalPart](Screenshots\Step7_FinalPart.png)
+![Step_7_FinalPart](Screenshots/Step7_FinalPart.png)
 We can see - (hiphon) all the way to the left of the file name of the non-partitioned table that is the proof it stores data inside file
 
 But when we view the data of partitioned table it is stored in directory there is d all the way to the left that is the proof that it stoores data in directory instead of file that is the difference. 
 
 ## Step 8: Dropping partition table using 'Alter' command
 
-![Step8](Screenshots\Step8.png)
+![Step8](Screenshots/Step8.png)
 
 Here we are viewing the partition date before and after dropping one partition date using alter command. As we created and inserted data in hive we are the owner not the HDFS so entire data along with data type is deleted/dropped
+
 
