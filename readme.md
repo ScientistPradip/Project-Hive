@@ -122,4 +122,7 @@ But when we view the data of partitioned table it is stored in directory there i
 
 Here we are viewing the partition date before and after dropping one partition date using alter command. As we created and inserted data in hive we are the owner not the HDFS so entire data along with data type is deleted/dropped
 
+# Conclusion 
+This Apache Hive project gave me the general idea of how to work with big data using Hive within a Docker environment. I practiced creating databases and tables, specifying column data types, loading CSV data, and retrieving records using HiveQL. I also learned how external tables function and how Hive organizes and manages data stored in HDFS.
 
+Overall, this project improved my understanding of data warehousing, SQL based data processing, and the role of Apache Hive in the Hadoop ecosystem. It provided hands-on experience with big data technologies and helped me establish a stronger foundation for further learning in data engineering, including ETL pipelines and cloud-based data platforms.
