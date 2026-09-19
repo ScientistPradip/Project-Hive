@@ -1,6 +1,6 @@
 # Apache Hive  Project (partitioning table creation)
 This project focuses on working with Apache Hive to create databases and tables, load data stored in HDFS, creating partitioning tables, define appropriate data types, and query structured data using HiveQL.
-We first create non partiotioning table and convert it to partitioning table because it will ultimately helps in reducing datascanning in bigdata. 
+We first create non partiotioning table and convert it to partitioning table because it will ultimately helps in reducing data scanning in bigdata. 
 
 The project demonstrates how Hive can be used as a data warehouse tool on top of Hadoop and HDFS. The main goal is to understand partitioning by converting non partitioning table to partitioning table and discussing about the advantage of partitioning table .And understand how data stored in HDFS can be organized into tables and accessed using SQL-like queries (HiveQL).
 
