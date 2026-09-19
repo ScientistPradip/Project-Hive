@@ -1,7 +1,7 @@
 # Apache Hive  Project
-This project focuses on working with Apache Hive to create databases and tables, load data stored in HDFS, define appropriate data types, and query structured data using HiveQL.
+This project focuses on working with Apache Hive to create databases and tables, load data stored in HDFS, creating partitioning tables, define appropriate data types, and query structured data using HiveQL.
 
-The project demonstrates how Hive can be used as a data warehouse tool on top of Hadoop and HDFS. The main goal is to understand how data stored in HDFS can be organized into tables and accessed using SQL-like queries.
+The project demonstrates how Hive can be used as a data warehouse tool on top of Hadoop and HDFS. The main goal is to understand partitioning by converting non partitioning table to partitioning table and discussing about the advantage of partitioning table .And understand how data stored in HDFS can be organized into tables and accessed using SQL-like queries (HiveQL).
 
 ## Technologies Used
 - Apache Hive
@@ -16,6 +16,8 @@ The project demonstrates how Hive can be used as a data warehouse tool on top of
 - Start and work with the Hadoop and Hive environment.
 - Create and manage Hive databases.
 - Create tables using different Hive data types.
+- First creating non partitioning table and converting it into partitioning table
+- Listing the advantage of partitioning table (helps in reducing data scanning)
 - Use external tables with HDFS data.
 - Define row format and field delimiters.
 - Load and access data stored in HDFS.
