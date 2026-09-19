@@ -1,4 +1,4 @@
-# Apache Hive  Project (partitioning data)
+# Apache Hive  Project (Partitioning Data)
 This project focuses on working with Apache Hive to create databases and tables, load data stored in HDFS, creating partitioning tables, define appropriate data types, and query structured data using HiveQL.
 We first create non partiotioning table and convert it to partitioning data because it will ultimately helps in reducing data scanning in bigdata. 
 
